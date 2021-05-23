@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+h1{ 
+  background-color: rgba(56, 111, 221, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: blue 2px solid;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+
+.image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  border: blue 2px solid;
+}
