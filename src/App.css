@@ -56,8 +56,20 @@ form{
 
 .image{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
   border: blue 2px solid;
+}
+table tr th {
+  border: #282c34 solid 1px;
+  text-align: center;
+  
+}
+td{
+  border: #282c34 solid 1px;
+  text-align: center;
+
+
 }
