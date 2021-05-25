@@ -40,7 +40,7 @@ class App extends React.Component{
   getWeather=async()=>{
 
     console.log(this.state.showWeather)
-    let weatherport='http://localhost:3012'
+    let weatherport=process.env.REACT_APP_SERVER
     // process.env.REACT_APP_SERVER;
     let requstWeatherURL=`${weatherport}/weather?cityName=${this.state.city}`
     // 'http://localhost:3012/weather?cityName=Amman'
