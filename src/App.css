@@ -65,11 +65,17 @@ form{
 table tr th {
   border: #282c34 solid 1px;
   text-align: center;
+  font-size: 10px;
+
   
+}
+th{
+  height: 100px;
 }
 td{
   border: #282c34 solid 1px;
   text-align: center;
-
-
+}
+img{
+  width: 200px;
 }
