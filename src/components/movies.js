@@ -1,4 +1,5 @@
 import React from 'react';
+import Movie from './movie'
 
 class Movies extends React.Component{
 
@@ -24,18 +25,9 @@ class Movies extends React.Component{
             </tr>
             { this.props.moviesDatapushed.map((item,index)=>{
                 return(
-                    <tr key={index}>
-                        <th> {index} </th>
-                        <th> {item.title} </th>
-                        <th> {item.overview} </th>
-                        <th> {item.average_votes} </th>
-                        <th> {item.total_votes} </th>
-                        <th> {item.movieLanguage} </th>
-                        <img src={item.image_url} alt={item.title} />
-                        <th> {item.popularity} </th>
-                        <th> {item.release_on} </th>
 
-                    </tr>
+                    <Movie item={item} key={index} index={index} />
+                    
                 );                
             })
             }

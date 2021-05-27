@@ -19,8 +19,7 @@ class App extends React.Component{
       show:false,
       showWeather:false,  
       erromassage:false, 
-      weatherData:[],
-       
+      weatherData:[],       
       moviesData:[],   
     }
   }
@@ -39,7 +38,7 @@ class App extends React.Component{
   getWeather=async()=>{
 
     let weatherport=process.env.REACT_APP_SERVER
-    let locallyPort='http://localhost:3014'
+    let locallyPort='http://localhost:3016'
     let remoteHerakuServer='https://city-explorer-server3.herokuapp.com'
 
     let requstWeatherURL=`${weatherport}/weather?lat=${this.state.LocationData2.lat}&lon=${this.state.LocationData2.lon}`  
@@ -67,7 +66,7 @@ class App extends React.Component{
   // movies that include city's name 
 
   invokeMovieAPIData=async()=> {
-    let locallyPort='http://localhost:3014'
+    let locallyPort='http://localhost:3016'
     let remoteHerakuServer='https://city-explorer-server3.herokuapp.com'    
     let serverURL=process.env.REACT_APP_SERVER;   
     // console.log(serverURL)    
