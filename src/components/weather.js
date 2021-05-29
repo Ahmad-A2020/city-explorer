@@ -1,4 +1,5 @@
 import React from 'react';
+import Weatherday from './weatherDay.js'
 
 class Weather extends React.Component{
     
@@ -13,15 +14,10 @@ class Weather extends React.Component{
                     <th>Description</th>                                      
 
                 </tr>  
-                {this.props.weatherDataPushed.map(item=>{
-                    return(
-
-                    <tr>
-                        <th>{item.date}</th>
-                        <td>{item.description} </td>                  
-
-                    </tr>  
-                    )  
+                {this.props.weatherDataPushed.map((item,index)=>{
+                    return (
+                    <Weatherday itemPushed={item} key={index} />
+                    )
 
                 })}
 
